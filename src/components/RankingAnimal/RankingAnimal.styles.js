@@ -27,6 +27,5 @@ export const StarImg = styled.img`
 `;
 
 export const AnimalImg = styled.img`
-
   height: 80px;
 `;

@@ -1,4 +1,6 @@
-import { Container } from "./Container/Container";
+import { ContainerDiv } from "./Container/ContainerDiv";
+import { EloIndex } from "./EloIndex/EloIndex";
+import { PageSection } from "./PageSection/PageSection";
 import { RankingAnimal } from "./RankingAnimal/RankingAnimal";
 
-export  { Container, RankingAnimal } ;
+export { ContainerDiv, EloIndex, PageSection, RankingAnimal };

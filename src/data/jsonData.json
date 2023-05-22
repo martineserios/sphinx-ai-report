@@ -1,6 +1,8 @@
 {
-  "id": "My React Page",
-  "name": "Lorem Ipsum",
+  "id": "00012P",
+  "firstName": "Martin",
+  "lastName": "Di Paola",
+  "profile": "assets/perfil.jpg",
   "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque non consequat velit. Maecenas eros risus, ultricies quis lorem eu, venenatis varius velit. Phasellus in nisl eget nunc vulputate ornare in quis tellus.",
   "ranking": 164,
   "nestedObject": {
