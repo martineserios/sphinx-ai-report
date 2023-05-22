@@ -1,6 +1,6 @@
 import { styled } from "styled-components";
 
-export const HomeStyled = styled.div`
+export const TopContainer = styled.div`
   display: flex;
   flex-direction: column;
   padding-top: 120px;
