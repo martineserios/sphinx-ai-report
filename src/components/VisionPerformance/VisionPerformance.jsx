@@ -8,7 +8,6 @@ import {
 } from "./VisionPerformance.styles";
 
 export const VisionPerformance = ({ progress }) => {
-  console.log(progress.compensation);
   return (
     <ContainerDiv
       title="SPHINX VISION PERFORMANCE"

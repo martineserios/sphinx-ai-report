@@ -9,7 +9,7 @@ export const HomeStyled = styled.div`
 `;
 
 export const DuoContainer = styled.div`
-margin-top: 20px;
+  margin-top: 20px;
   display: flex;
   justify-content: space-evenly;
 `;

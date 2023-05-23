@@ -1,5 +1,6 @@
 import {
   AsimetriaFuncional,
+  BajoPresion,
   EloIndex,
   PageSection,
   TopInformation,
@@ -23,6 +24,7 @@ export const Home = () => {
         </DuoContainer>
         <DuoContainer>
           <AsimetriaFuncional radioValue={data.asimetriaFuncional} />
+          <BajoPresion needleData={data.decisionBajoPresion} />
         </DuoContainer>
       </HomeStyled>
     </PageSection>
