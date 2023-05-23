@@ -11,5 +11,14 @@
     "compensation": 38,
     "sacadios": 11
   },
+  "asimetriaFuncional": {
+    "ojoTecnico": "I",
+    "ojoTactico": "D",
+    "hombro": "I",
+    "cadera": "D",
+    "piernaDinamica": "I",
+    "piernaApoyo": "D",
+    "pirnaCood": "D"
+  },
   "arrayData": ["Item 1", "Item 2", "Item 3"]
 }

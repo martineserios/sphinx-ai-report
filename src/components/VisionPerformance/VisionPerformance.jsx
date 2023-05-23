@@ -37,7 +37,7 @@ export const VisionPerformance = ({ progress }) => {
           <ProgressFill progress={progress.compensation}></ProgressFill>
         </ProgressBarWrapper>
       </ProgressBarContainer>
-      <ProgressBarContainer notBordered>
+      <ProgressBarContainer notbordered="true">
         <Subtitle>Sacádicos</Subtitle>
         <ProgressBarWrapper>
           <ProgressText>{progress.sacadios}%</ProgressText>

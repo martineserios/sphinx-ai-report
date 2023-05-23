@@ -3,8 +3,8 @@ import { styled } from "styled-components";
 export const ProgressBarContainer = styled.div`
   display: flex;
   align-items: center;
-  border-bottom: ${({ notBordered }) =>
-    notBordered ? "none" : "1px solid #8d8d9b"};
+  border-bottom: ${({ notbordered }) =>
+    notbordered ? "none" : "1px solid #8d8d9b"};
   padding: 10px;
 `;
 
