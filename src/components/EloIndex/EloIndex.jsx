@@ -6,6 +6,7 @@ const RankContainer = styled.div`
   align-items: center;
   display: flex;
   color: #fff;
+  margin: 8px 20px;
 
   & > h3 {
     font-size: 40px;

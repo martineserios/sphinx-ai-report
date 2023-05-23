@@ -6,6 +6,7 @@ import {
   NameImgContainer,
   NameOutlined,
   ProfileImg,
+  TopContainer,
 } from "./TopInformation.styles";
 
 export const TopInformation = (props) => {

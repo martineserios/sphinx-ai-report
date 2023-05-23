@@ -1,20 +1,21 @@
 import { EloIndex, PageSection, TopInformation } from "../../components";
+import { VisionPerformance } from "../../components/VisionPerformance/VisionPerformance";
 import data from "../../data/data";
-import { HomeStyled } from "./Home.styles";
+import { DuoContainer, HomeStyled } from "./Home.styles";
 
 export const Home = () => {
   return (
     <PageSection>
       <HomeStyled>
-
         <TopInformation
           id={data.id}
           firstName={data.firstName}
           lastName={data.lastName}
         />
-
-        <EloIndex ranking={data.ranking} />
-        
+        <DuoContainer>
+          <EloIndex ranking={data.ranking} />
+          <VisionPerformance progress={data.visionPerformance} />
+        </DuoContainer>
       </HomeStyled>
     </PageSection>
   );

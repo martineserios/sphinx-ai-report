@@ -2,7 +2,7 @@ import { styled } from "styled-components";
 
 export const TopContainer = styled.div`
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   padding-top: 120px;
   min-height: 100%;
   width: 900px;
@@ -25,7 +25,7 @@ export const IdContainer = styled.div`
 
 export const NameImgContainer = styled.div`
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   flex-wrap: wrap;
   align-items: center;
 `;
@@ -40,8 +40,8 @@ export const Divisor = styled.div`
   height: 170px;
   width: 4px;
   background: #fff;
-  margin-left: -20px;
-  margin-right: 20px;
+  margin-left: -40px;
+  margin-right: 40px;
 `;
 
 export const NameOutlined = styled.h1`
