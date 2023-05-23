@@ -6,7 +6,7 @@ const TextContainer = styled.div`
   justify-content: center;
   margin: 0;
   padding: 0;
-  width: 720px;
+  width: 730px;
   gap: 20px;
   & > p {
     color: #fff;
