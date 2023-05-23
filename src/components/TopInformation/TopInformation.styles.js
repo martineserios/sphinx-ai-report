@@ -40,8 +40,7 @@ export const Divisor = styled.div`
   height: 170px;
   width: 4px;
   background: #fff;
-  margin-left: -40px;
-  margin-right: 40px;
+  margin-right: 20px;
 `;
 
 export const NameOutlined = styled.h1`
