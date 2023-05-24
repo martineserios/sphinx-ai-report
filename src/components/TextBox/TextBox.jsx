@@ -3,25 +3,27 @@ import { ContainerDiv } from "../index";
 
 const TextContainer = styled.div`
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
+  align-items: center;
   margin: 0;
-  padding: 0;
+  padding: 12px 6px;
   width: 730px;
   gap: 20px;
   & > p {
     color: #fff;
     line-height: 22px;
     text-align: justify;
-    width: 50%;
+    width: ${({ widthh }) => (widthh ? "50%" : "auto")};
   }
 `;
 
-export const TextBox = ({ title, textL, textR }) => {
+export const TextBox = ({ title, textL, textR, children }) => {
   return (
-    <ContainerDiv title={title}>
-      <TextContainer>
+    <ContainerDiv textBox="true" title={title}>
+      <TextContainer widthh={textR}>
+        {children}
         <p>{textL}</p>
-        <p>{textR}</p>
+        {textR ? <p>{textR}</p> : <></>}
       </TextContainer>
     </ContainerDiv>
   );

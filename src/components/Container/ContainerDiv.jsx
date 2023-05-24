@@ -7,20 +7,14 @@ import {
 
 export const ContainerDiv = (props) => {
   return (
-    <ContainerHolder>
+    <ContainerHolder contwidth={props.contwidth}>
       <ContainerChild>
-        <ContainerTitle
-          divpadding={props.dPadding}
-          textalign={props.titleDirection}
-        >
+        <ContainerTitle textbox={props.textBox} textalign={props.titleDirection}>
           {props.title}
         </ContainerTitle>
       </ContainerChild>
       <ContainerChild>
-        <ContainerStyled
-          divpadding={props.dPadding}
-          rounded={props.rounded ? "true" : "false"}
-        >
+        <ContainerStyled rounded={props.rounded ? "true" : "false"}>
           {props.children}
         </ContainerStyled>
       </ContainerChild>

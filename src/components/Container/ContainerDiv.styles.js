@@ -13,8 +13,8 @@ export const ContainerStyled = styled.div`
 export const ContainerTitle = styled.h3`
   ${(props) =>
     props.textalign === "right"
-      ? "background-image: linear-gradient(to left, #ffc561, #cd6a83);"
-      : "background-image: linear-gradient(to right, #ffc561, #cd6a83);"}
+      ? "background-image: linear-gradient(to left, #ffc561, #FCA175, #cd6a83, #4F5056);"
+      : "background-image: linear-gradient(to right, #ffc561, #FCA175, #cd6a83, #4F5056);"}
   color: #fff;
   top: 0;
   font-weight: 200;
@@ -22,7 +22,10 @@ export const ContainerTitle = styled.h3`
   text-align: ${({ textalign }) => textalign || "left"};
   text-indent: 6px;
   padding: 3px 0;
-  width: 100%;
+  ${(props) =>
+    props.textbox === "true"
+      ? "width: fit-content; padding-right: 100px;"
+      : "width: 100%"}
 `;
 
 export const ContainerHolder = styled.div`
@@ -32,5 +35,5 @@ export const ContainerHolder = styled.div`
 `;
 
 export const ContainerChild = styled.div`
-  width: 100%;
+  width: ${({ contwidth }) => contwidth || "100%"};
 `;
