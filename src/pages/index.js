@@ -1,2 +1,4 @@
 import { Home } from "./Home/Home";
-export { Home };
+import { VisionPeriferica } from "./VisionPeriferica/VisionPeriferica";
+
+export { Home, VisionPeriferica };

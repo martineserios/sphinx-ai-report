@@ -37,10 +37,9 @@ export const BajoPresion = ({ needleData }) => {
         y1={170}
         x2={needleX}
         y2={needleY}
-        stroke="#000"
-        strokeWidth={2}
+        stroke="#2b3340"
+        strokeWidth={3}
       />
-      
     );
   };
 

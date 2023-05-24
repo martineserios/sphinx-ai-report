@@ -18,7 +18,7 @@ html{
 
 
 body {
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
   min-height: 100%;}
   font-family: Open-Sans, Helvetica, Sans-Serif;
 `;
