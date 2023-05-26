@@ -1,4 +1,9 @@
-import { BlinkDuration, Header, PageSection } from "../../components";
+import {
+  BlinkDuration,
+  EARBlinks,
+  Header,
+  PageSection,
+} from "../../components";
 import data from "../../data/data";
 import { HorizontalContainerRO, ROStyled } from "./ResistenciaOcular.styles";
 
@@ -15,6 +20,7 @@ export const ResistenciaOcular = () => {
         />
         <HorizontalContainerRO>
           <BlinkDuration radioValue={data.blinkDuration} />
+          <EARBlinks />
         </HorizontalContainerRO>
       </ROStyled>
     </PageSection>

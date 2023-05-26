@@ -4,6 +4,7 @@ import { BajoPresion } from "./BajoPresion/BajoPresion";
 import { BlinkDuration } from "./BlinkDuration/BlinkDuration";
 import { BlinkingBlindness } from "./BlinkingBlindness/BlinkingBlindness";
 import { ContainerDiv } from "./Container/ContainerDiv";
+import { EARBlinks } from "./EARBlinks/EARBlinks";
 import { Ejes } from "./Ejes/Ejes";
 import { EloIndex } from "./EloIndex/EloIndex";
 import { HeadCompensation } from "./HeadCompensation/HeadCompensation";
@@ -23,6 +24,7 @@ export {
   BlinkDuration,
   BlinkingBlindness,
   ContainerDiv,
+  EARBlinks,
   Ejes,
   EloIndex,
   Header,
