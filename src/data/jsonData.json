@@ -22,7 +22,13 @@
     "pirnaCood": "D"
   },
   
-  "resultado": "90",
+  "resultado1": "90",
+  "resultado2": "95",
+
+  "blinkingBlindness":{
+    "value1": 4,
+    "value2": 1
+  },
 
   "decisionBajoPresion": "40",
   
@@ -54,6 +60,29 @@
 
     "stackValue6": "20",
     "stackColor6": "PRO"
+  },
+
+  "secondHeadCompensation": {
+    "nivel": "AMATEUR",
+    "percentage": "32",
+
+    "stackValue1": "50",
+    "stackColor1": "PRO",
+
+    "stackValue2": "22",
+    "stackColor2": "BEG",
+
+    "stackValue3": "65",
+    "stackColor3": "AM",
+
+    "stackValue4": "10",
+    "stackColor4": "PRO",
+
+    "stackValue5": "80",
+    "stackColor5": "AM",
+
+    "stackValue6": "20",
+    "stackColor6": "BEG"
   },
 
   "blinkDuration": "A3",

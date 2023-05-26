@@ -23,7 +23,11 @@ export const BDInput = styled.input`
 export const DBTable = styled.table`
   color: #c8e25f;
   border-collapse: collapse;
-  margin: 8px;
+  margin: 14px;
+  margin-left: -12px;
+  position: relative;
+  width: 200px;
+  height: 200px;
   & > tbody > tr > th {
     border: 2px solid #6f737c;
     margin: 0px;
@@ -32,25 +36,37 @@ export const DBTable = styled.table`
 
 export const BDLabel = styled.span`
   font-weight: 100;
-  z-index: 999;
+  color: transparent;
 `;
 
 export const BGVertical = styled.div`
   background: #6f737c;
-  height: 150px;
+  height: 170px;
   width: 14px;
+  position: absolute;
   border-radius: 20px;
   z-index: 1;
-  margin-top: -150px;
-  margin-left: -2px;
+  margin-top: 40px;
+  margin-left: -196px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  color: #c8e25f;
+  align-items: center;
+
 `;
 export const BGHorizontal = styled.div`
+  align-items: center;
+  color: #c8e25f;
+  display: flex;
+  justify-content: space-evenly;
   background: #6f737c;
   height: 14px;
-  width: 140px;
+  position: absolute;
+  width: 165px;
   border-radius: 20px;
   z-index: 1;
-  margin-top: -175px;
-  margin-right: -160px;
-  margin-left: 26px;
+  margin-top: 14px;
+  margin-right: 0px;
+  margin-left: 10px;
 `;

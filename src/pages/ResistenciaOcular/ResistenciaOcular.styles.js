@@ -15,3 +15,10 @@ export const HorizontalContainerRO = styled.div`
   display: flex;
   justify-content: space-between;
 `;
+
+export const VerticalContainerRO = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 260px;
+`;

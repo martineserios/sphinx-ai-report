@@ -168,9 +168,17 @@ export const BlinkDuration = ({ radioValue }) => {
             </th>
           </tr>
         </tbody>
-        <BGVertical />
-        <BGHorizontal />
       </DBTable>
+      <BGVertical>
+        <p>1</p>
+        <p>2</p>
+        <p>3</p>
+      </BGVertical>
+      <BGHorizontal>
+        <p>A</p>
+        <p>B</p>
+        <p>C</p>
+      </BGHorizontal>
     </ContainerDiv>
   );
 };

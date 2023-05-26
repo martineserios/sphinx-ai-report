@@ -20,10 +20,10 @@ const SubtitleHolder = styled.div`
   }
 `;
 
-export const BlinkingBlindness = ({}) => {
+export const BlinkingBlindness = ({ chartValue }) => {
   const data = [
-    { name: "completed", value: 4 },
-    { name: "toComplete", value: 10 },
+    { name: "completed", value: chartValue },
+    { name: "toComplete", value: 10 - chartValue },
   ];
   const COLORS = ["#C8E263", "#6F737E"];
   return (
@@ -51,7 +51,7 @@ export const BlinkingBlindness = ({}) => {
         </Pie>
       </PieChart>
       <SubtitleHolder>
-        <h3>4/10</h3>
+        <h3>{chartValue}/10</h3>
         <h4>SEC</h4>
       </SubtitleHolder>
     </ContainerDiv>

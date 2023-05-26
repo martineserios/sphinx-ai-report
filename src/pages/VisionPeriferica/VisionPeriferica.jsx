@@ -37,9 +37,9 @@ export const VisionPeriferica = () => {
               contwidth="100px"
               titleDirection="right"
             >
-              <SingleProgressBar subtitle="NIVEL 1" progress={data.resultado} />
+              <SingleProgressBar subtitle="NIVEL 1" progress={data.resultado1} />
             </ContainerDiv>
-            <BlinkingBlindness />
+            <BlinkingBlindness chartValue={data.blinkingBlindness.value1} />
           </VerticalHolder>
         </DuoContainerVP>
         <TextBox
