@@ -24,6 +24,13 @@
 
   "resultado": "90",
 
+  "averageAcuraccy": {
+    "blue1": 90,
+    "pink1": 19,
+    "blue2": 90,
+    "pink2": 23
+  },
+
   "firstHeadCompensation": {
     "nivel": "AMATEUR",
     "percentage": "31",
