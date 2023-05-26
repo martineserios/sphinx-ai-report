@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { PieChart, Pie, Cell } from "recharts";
 import { ContainerDiv } from "../Container/ContainerDiv";
+import { styled } from "styled-components";
+import { drop } from "../../assets";
 
 const data = [
   { name: "Defecto excesivo", value: 30 },
@@ -11,37 +13,26 @@ const data = [
 ];
 const COLORS = ["#FF7694", "#FFC662", "#C8E265", "#FFC662"];
 
+const RotatedImage = styled.img`
+  transform-origin: bottom center;
+  transform: rotate(${(props) => props.rotation || "0"}deg);
+  position: absolute;
+  width: 30px;
+  margin-right: -50px;
+  margin-top: 110px;
+`;
+
 export const BajoPresion = ({ needleData }) => {
   const [needleValue, setNeedleValue] = useState(0);
 
   const handleNeedle = (needleData) => {
-    let valueNeedle = 200 - needleData;
-    setNeedleValue(valueNeedle);
+    const degree = needleData * 1.8 - 90;
+    setNeedleValue(Math.round(degree));
   };
 
   useEffect(() => {
     handleNeedle(needleData);
   }, [needleData]);
-
-  const renderNeedle = () => {
-    const needleAngle = 180 - (needleValue / 100) * 180;
-    const needleLength = 120 - (120 - 15) * 0.5;
-    const needleX =
-      242 + needleLength * Math.cos((needleAngle * Math.PI) / 180);
-    const needleY =
-      170 + needleLength * Math.sin((needleAngle * Math.PI) / 180);
-
-    return (
-      <line
-        x1={242}
-        y1={170}
-        x2={needleX}
-        y2={needleY}
-        stroke="#2b3340"
-        strokeWidth={3}
-      />
-    );
-  };
 
   return (
     <ContainerDiv title="TOMA DE DECISIÓN BAJO PRESIÓN" titleDirection="right">
@@ -79,8 +70,8 @@ export const BajoPresion = ({ needleData }) => {
             />
           ))}
         </Pie>
-        {renderNeedle()}
       </PieChart>
+      <RotatedImage src={drop} rotation={needleValue} alt="Image" />
     </ContainerDiv>
   );
 };

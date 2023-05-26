@@ -1,4 +1,5 @@
 import bull from "./bull.svg";
+import drop from "./drop.svg";
 import ejes from "./ejes.svg";
 import lettersChart from "./lettersChart.png";
 import logo from "./logo.svg";
@@ -7,4 +8,4 @@ import star from "./star.svg";
 import up from "./up.svg";
 import whiteUp from "./whiteUp.svg";
 
-export { lettersChart, logo, profile, star, bull, up, whiteUp, ejes };
+export {drop, lettersChart, logo, profile, star, bull, up, whiteUp, ejes };

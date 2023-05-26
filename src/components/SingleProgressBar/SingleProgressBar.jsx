@@ -39,8 +39,7 @@ const ProgressValue = styled.span`
 
 const SubtitleContainer = styled.div`
   display: flex;
-  /* width: 100%; */
-  /* gap: 100px; */
+  width: 100%;
   justify-content: space-between;
   margin-bottom: 12px;
   color: #fff;
