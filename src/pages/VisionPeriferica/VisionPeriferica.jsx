@@ -3,6 +3,7 @@ import {
   AverageAcuraccy,
   BlinkingBlindness,
   ContainerDiv,
+  HeadCompensation,
   Header,
   PageSection,
   SingleProgressBar,
@@ -47,6 +48,23 @@ export const VisionPeriferica = () => {
         >
           <TextBoxImg src={lettersChart} />
         </TextBox>
+        <HeadCompensation
+          progress={data.firstHeadCompensation.percentage}
+          progressNivel={data.firstHeadCompensation.nivel}
+          stackValue1={data.firstHeadCompensation.stackValue1}
+          stackColor1={data.firstHeadCompensation.stackColor1}
+          stackValue2={data.firstHeadCompensation.stackValue2}
+          stackColor2={data.firstHeadCompensation.stackColor2}
+          stackValue3={data.firstHeadCompensation.stackValue3}
+          stackColor3={data.firstHeadCompensation.stackColor3}
+          stackValue4={data.firstHeadCompensation.stackValue4}
+          stackColor4={data.firstHeadCompensation.stackColor4}
+          stackValue5={data.firstHeadCompensation.stackValue5}
+          stackColor5={data.firstHeadCompensation.stackColor5}
+          stackValue6={data.firstHeadCompensation.stackValue6}
+          stackColor6={data.firstHeadCompensation.stackColor6}
+        />
+        
       </VPStyled>
     </PageSection>
   );

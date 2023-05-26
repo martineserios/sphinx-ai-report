@@ -2,7 +2,7 @@ import { styled } from "styled-components";
 
 export const PageSectionStyled = styled.section`
   background-image: linear-gradient(#323a46, #7b40ca);
-  min-height: 100%;
+  /* min-height: 100%; */
   width: 100%;
   display: flex;
   justify-content: center;

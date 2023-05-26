@@ -24,6 +24,29 @@
 
   "resultado": "90",
 
+  "firstHeadCompensation": {
+    "nivel": "AMATEUR",
+    "percentage": "31",
+
+    "stackValue1": "60",
+    "stackColor1": "PRO",
+
+    "stackValue2": "82",
+    "stackColor2": "AR",
+
+    "stackValue3": "75",
+    "stackColor3": "AM",
+
+    "stackValue4": "90",
+    "stackColor4": "PRO",
+
+    "stackValue5": "30",
+    "stackColor5": "BEG",
+
+    "stackValue6": "20",
+    "stackColor6": "PRO"
+  },
+
   "decisionBajoPresion": "34",
 
   "arrayData": ["Item 1", "Item 2", "Item 3"]

@@ -3,7 +3,7 @@ import { styled } from "styled-components";
 const ProgressBarWrapper = styled.div`
   flex-grow: 1;
   height: 18px;
-  width: 200px;
+  width: 235px;
   background-color: #fff;
   position: relative;
   margin-bottom: 16px;
@@ -17,7 +17,7 @@ const Subtitle = styled.span`
 
 const ProgressFill = styled.div`
   height: 100%;
-  background-color: #ffc661;
+  background-color: ${(props) => props.barcolor || "#ffc661"};
   width: ${(props) => `${props.progress}%`};
   display: flex;
   align-items: center;
@@ -28,7 +28,7 @@ const ProgressFill = styled.div`
 
 const ProgressValue = styled.span`
   position: absolute;
-  background-color: #ffc661;
+  background-color: ${(props) => props.barcolor || "#ffc661"};
   height: 25px;
   width: 25px;
   border-radius: 50%;
@@ -40,22 +40,26 @@ const ProgressValue = styled.span`
 const SubtitleContainer = styled.div`
   display: flex;
   /* width: 100%; */
-  gap: 100px;
+  /* gap: 100px; */
   justify-content: space-between;
   margin-bottom: 12px;
   color: #fff;
+
+  & > p {
+    color: ${(props) => props.barcolor || "#fff"};
+  }
 `;
 
-export const SingleProgressBar = ({ subtitle, progress }) => {
+export const SingleProgressBar = ({ barColor, subtitle, progress }) => {
   return (
     <>
-      <SubtitleContainer>
+      <SubtitleContainer barcolor={barColor}>
         <Subtitle>{subtitle}</Subtitle>
         <p>{progress}%</p>
       </SubtitleContainer>
       <ProgressBarWrapper>
-        <ProgressFill progress={progress}></ProgressFill>
-        <ProgressValue value={progress} />
+        <ProgressFill barcolor={barColor} progress={progress}></ProgressFill>
+        <ProgressValue barcolor={barColor} value={progress} />
       </ProgressBarWrapper>
     </>
   );

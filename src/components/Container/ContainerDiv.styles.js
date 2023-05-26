@@ -24,7 +24,7 @@ export const ContainerTitle = styled.h3`
   padding: 3px 0;
   ${(props) =>
     props.textbox === "true"
-      ? "width: fit-content; padding-right: 100px;"
+      ? "width: 50%; padding-right: 20px;"
       : "width: 100%"}
 `;
 
