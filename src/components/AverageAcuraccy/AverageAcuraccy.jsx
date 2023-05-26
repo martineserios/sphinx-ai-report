@@ -180,8 +180,8 @@ export const AverageAcuraccy = () => {
         skewxb="skewx(-20deg)"
         content={data.averageAcuraccy.blue1 + "%"}
         diheight="20px"
-        borderleft
-        borderbottom
+        borderleft="true"
+        borderbottom="true"
       />
       <InclinedDiv
         margintop="70px"
@@ -191,8 +191,8 @@ export const AverageAcuraccy = () => {
         skewxb="skewx(20deg)"
         marginbottomlabel="40px"
         diheight="40px"
-        bordertop
-        borderleft
+        bordertop="true"
+        borderleft="true"
       />
       <InclinedDiv
         margintop="75px"
@@ -202,8 +202,8 @@ export const AverageAcuraccy = () => {
         skewxb="skewx(-20deg)"
         marginbottomlabel="40px"
         diheight="40px"
-        borderright
-        bordertop
+        borderright="true"
+        bordertop="true"
       />
       <InclinedDiv
         margintop="75px"
@@ -213,8 +213,8 @@ export const AverageAcuraccy = () => {
         skewxb="skewx(-20deg)"
         marginbottomlabel="40px"
         diheight="40px"
-        borderright
-        bordertop
+        borderright="true"
+        bordertop="true"
       />
       <InclinedDiv
         margintop="70px"
@@ -224,8 +224,8 @@ export const AverageAcuraccy = () => {
         skewxb="skewx(20deg)"
         marginbottomlabel="40px"
         diheight="40px"
-        bordertop
-        borderleft
+        bordertop="true"
+        borderleft="true"
       />
       <InclinedDiv
         margintop="180px"
@@ -234,8 +234,8 @@ export const AverageAcuraccy = () => {
         skewxb="skewx(20deg)"
         content={data.averageAcuraccy.blue2 + "%"}
         diheight="20px"
-        borderright
-        borderbottom
+        borderright="true"
+        borderbottom="true"
       />
       <AVLabelContainer labelmargintop="230px" labelmarginleft="-240px">
         <AVLabelText>

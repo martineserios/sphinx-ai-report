@@ -1,6 +1,7 @@
 import { AsimetriaFuncional } from "./AsimetriaFuncional/AsimetriaFuncional";
 import { AverageAcuraccy } from "./AverageAcuraccy/AverageAcuraccy";
 import { BajoPresion } from "./BajoPresion/BajoPresion";
+import { BlinkDuration } from "./BlinkDuration/BlinkDuration";
 import { BlinkingBlindness } from "./BlinkingBlindness/BlinkingBlindness";
 import { ContainerDiv } from "./Container/ContainerDiv";
 import { Ejes } from "./Ejes/Ejes";
@@ -19,6 +20,7 @@ export {
   AsimetriaFuncional,
   AverageAcuraccy,
   BajoPresion,
+  BlinkDuration,
   BlinkingBlindness,
   ContainerDiv,
   Ejes,

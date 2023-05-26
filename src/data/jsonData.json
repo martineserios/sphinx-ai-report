@@ -21,9 +21,11 @@
     "piernaApoyo": "D",
     "pirnaCood": "D"
   },
-
+  
   "resultado": "90",
 
+  "decisionBajoPresion": "40",
+  
   "averageAcuraccy": {
     "blue1": 90,
     "pink1": 19,
@@ -54,7 +56,10 @@
     "stackColor6": "PRO"
   },
 
-  "decisionBajoPresion": "40",
+  "blinkDuration": "A3",
+
+  
+
 
   "arrayData": ["Item 1", "Item 2", "Item 3"]
 }
