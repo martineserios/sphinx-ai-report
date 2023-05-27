@@ -10,7 +10,10 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@nivo/sunburst": "^0.83.0",
+    "apexcharts": "^3.40.0",
     "react": "^18.2.0",
+    "react-apexcharts": "^1.4.0",
     "react-dom": "^18.2.0",
     "recharts": "^2.6.2",
     "styled-components": "^6.0.0-rc.1"

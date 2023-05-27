@@ -1,4 +1,9 @@
-import { EloDistribution, Header, PageSection } from "../../components";
+import {
+  EloDistribution,
+  Header,
+  PageSection,
+  Resumen,
+} from "../../components";
 import data from "../../data/data";
 import { EstadisticaStyled } from "./Estadistica.styles";
 
@@ -14,6 +19,7 @@ export const Estadistica = () => {
           }
         />
         <EloDistribution positionCircle={data.eloDistribution - 1} />
+        <Resumen />
       </EstadisticaStyled>
     </PageSection>
   );
