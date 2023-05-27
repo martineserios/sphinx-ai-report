@@ -123,6 +123,9 @@ const CustomBar = ({ x, y, width, height, color }) => {
   return <rect x={x} y={y} width={width} height={height} fill={color} />;
 };
 
+const width = 650
+const height = 300
+
 export const EloDistribution = ({ positionCircle }) => {
   const [circlePosition, setCirclePosition] = useState(0);
   useEffect(() => {
@@ -131,7 +134,7 @@ export const EloDistribution = ({ positionCircle }) => {
 
   return (
     <ContainerDiv title="ELO DISTRIBUTION" textBox="true">
-      <ResponsiveContainer width={650} height={300} paddin={{ left: 0 }}>
+      <ResponsiveContainer width="90%" height={height} >
         <ComposedChart
           data={data}
           margin={{ top: 100, right: 50, bottom: 46, left: 0 }}

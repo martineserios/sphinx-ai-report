@@ -1,5 +1,5 @@
 const useCirclePosition = (value) => {
-  const position = -622 + value * 57;
+  const position = value < 16 ? -622 + value * 57 : -614 + value * 57;
 
   return position;
 };
