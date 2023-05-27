@@ -1,4 +1,9 @@
-import { Home, ResistenciaOcular, VisionPeriferica } from "./pages";
+import {
+  Estadistica,
+  Home,
+  ResistenciaOcular,
+  VisionPeriferica,
+} from "./pages";
 import GlobalStyle from "./styles/globalStyles";
 function App() {
   return (
@@ -7,6 +12,7 @@ function App() {
       <Home />
       <VisionPeriferica />
       <ResistenciaOcular />
+      <Estadistica />
     </>
   );
 }

@@ -6,12 +6,21 @@ import {
   StarImg,
 } from "./RankingAnimal.styles";
 
-export const RankingAnimal = () => {
+export const RankingAnimal = ({
+  bgColor,
+  width,
+  height,
+  innerWidth,
+  innerHeight,
+  animalHeight,
+  starHeight,
+  starBottom,
+}) => {
   return (
-    <HexagonWrapper>
-      <HexagonInner>
-        <AnimalImg src={bull} />
-        <StarImg src={star} />
+    <HexagonWrapper outerwidth={width} outerheight={height} bgcolor={bgColor}>
+      <HexagonInner innerwidth={innerWidth} innerheight={innerHeight}>
+        <AnimalImg src={bull} animalheight={animalHeight} />
+        <StarImg src={star} starheight={starHeight} starbottom={starBottom} />
       </HexagonInner>
     </HexagonWrapper>
   );

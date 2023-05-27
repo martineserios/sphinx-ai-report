@@ -1,10 +1,11 @@
 import { styled } from "styled-components";
 
 export const HexagonWrapper = styled.div`
-  width: 135px;
-  height: 150px;
+  width: ${({ outerwidth }) => outerwidth || "135"}px;
+  height: ${({ outerheight }) => outerheight || "150"}px;
+
   position: relative;
-  background-color: #ff7494;
+  background-color: ${({ bgcolor }) => bgcolor || "#ff7494"};
   display: flex;
   justify-content: center;
   align-items: center;
@@ -12,8 +13,8 @@ export const HexagonWrapper = styled.div`
 `;
 
 export const HexagonInner = styled.div`
-  width: 120px;
-  height: 130px;
+  width: ${({ innerwidth }) => innerwidth || "120"}px;
+  height: ${({ innerheight }) => innerheight || "130"}px;
   background-color: #6f737d;
   display: flex;
   justify-content: center;
@@ -22,10 +23,11 @@ export const HexagonInner = styled.div`
 `;
 
 export const StarImg = styled.img`
-  height: 36px;
-  margin-bottom: -20px;
+  height: ${({ starheight }) => starheight || "36"}px;
+  margin-bottom: ${({ starbottom }) => starbottom || "-20"}px;
+
 `;
 
 export const AnimalImg = styled.img`
-  height: 80px;
+  height: ${({ animalheight }) => animalheight || "80"}px;
 `;

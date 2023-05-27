@@ -6,6 +6,7 @@ import { BlinkingBlindness } from "./BlinkingBlindness/BlinkingBlindness";
 import { ContainerDiv } from "./Container/ContainerDiv";
 import { EARBlinks } from "./EARBlinks/EARBlinks";
 import { Ejes } from "./Ejes/Ejes";
+import { EloDistribution } from "./EloDistribution/EloDistribution";
 import { EloIndex } from "./EloIndex/EloIndex";
 import { HeadCompensation } from "./HeadCompensation/HeadCompensation";
 import { Header } from "./Header/Header";
@@ -26,6 +27,7 @@ export {
   ContainerDiv,
   EARBlinks,
   Ejes,
+  EloDistribution,
   EloIndex,
   Header,
   HeadCompensation,

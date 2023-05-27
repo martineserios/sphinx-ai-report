@@ -4,10 +4,10 @@ import { ContainerDiv } from "../Container/ContainerDiv";
 import { styled } from "styled-components";
 
 const data = [
+  { name: "Group D", value: 5, color: "#F5C7EC" },
   { name: "Group A", value: 5, color: "#EC3655" },
   { name: "Group B", value: 5, color: "#FA6997" },
   { name: "Group C", value: 5, color: "#F99AC8" },
-  { name: "Group D", value: 5, color: "#F5C7EC" },
 ];
 
 export const LabelContainer = styled.div`
@@ -113,8 +113,8 @@ export const EARBlinks = () => {
           data={data}
           cx={100}
           cy={80}
-          startAngle={90}
-          endAngle={-270}
+          startAngle={180}
+          endAngle={-180}
           innerRadius={40}
           outerRadius={60}
           dataKey="value"
