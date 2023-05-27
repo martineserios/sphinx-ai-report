@@ -87,7 +87,7 @@
 
   "blinkDuration": "A3",
 
-  
+  "eloDistribution": "9",
 
 
   "arrayData": ["Item 1", "Item 2", "Item 3"]

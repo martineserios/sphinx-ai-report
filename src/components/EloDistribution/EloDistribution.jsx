@@ -1,13 +1,16 @@
-import { styled } from "styled-components";
 import { ContainerDiv, RankingAnimal } from "../index/";
 
 import { ComposedChart, XAxis, Bar, ResponsiveContainer } from "recharts";
 import {
-    DotsContainer,
+  CircleInner,
+  CircleOuter,
+  DotsContainer,
   RankingAnimalContainer,
   SubtitleContainer,
   SubtitleDots,
 } from "./EloDistribution.styles";
+import { useEffect, useState } from "react";
+import useCirclePosition from "../../hooks/useCirclePosition";
 
 const data = [
   {
@@ -120,7 +123,12 @@ const CustomBar = ({ x, y, width, height, color }) => {
   return <rect x={x} y={y} width={width} height={height} fill={color} />;
 };
 
-export const EloDistribution = () => {
+export const EloDistribution = ({ positionCircle }) => {
+  const [circlePosition, setCirclePosition] = useState(0);
+  useEffect(() => {
+    setCirclePosition(useCirclePosition(positionCircle));
+  }, [positionCircle]);
+
   return (
     <ContainerDiv title="ELO DISTRIBUTION" textBox="true">
       <ResponsiveContainer width={650} height={300} paddin={{ left: 0 }}>
@@ -139,6 +147,13 @@ export const EloDistribution = () => {
           />
         </ComposedChart>
       </ResponsiveContainer>
+      <CircleOuter
+        className="circle"
+        position={circlePosition}
+        positiontop={positionCircle}
+      >
+        <CircleInner style={{}}></CircleInner>
+      </CircleOuter>
       <RankingAnimalContainer position={"100px 0px 0px -580px"}>
         <RankingAnimal
           bgColor="#FFC563"

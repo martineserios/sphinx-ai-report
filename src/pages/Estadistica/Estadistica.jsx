@@ -1,4 +1,5 @@
 import { EloDistribution, Header, PageSection } from "../../components";
+import data from "../../data/data";
 import { EstadisticaStyled } from "./Estadistica.styles";
 
 export const Estadistica = () => {
@@ -12,7 +13,7 @@ export const Estadistica = () => {
             "En la siguiente tabla se muestra el resultado de las habilidades visuales del deportista luego de realizar las diferentes pruebas. Así como también los pasos a seguir para alcanzar el próximo nivel."
           }
         />
-        <EloDistribution />
+        <EloDistribution positionCircle={data.eloDistribution - 1} />
       </EstadisticaStyled>
     </PageSection>
   );

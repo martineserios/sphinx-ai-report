@@ -37,3 +37,21 @@ export const DotsContainer = styled.div`
   margin-right: -10px;
   color: #fff;
 `;
+
+export const CircleOuter = styled.div`
+  position: absolute;
+  border: 1px solid #fff;
+  padding: 3px;
+  border-radius: 50px;
+  /* margin-top: 220px; */
+  margin-top: ${({ positiontop }) =>
+    positiontop < 11 ? 220 - positiontop * 12 : positiontop * 10}px;
+  margin-left: ${({ position }) => position}px;
+`;
+export const CircleInner = styled.div`
+  height: 8px;
+  width: 8px;
+  border: 2px solid transparent;
+  background: #fff;
+  border-radius: 50%;
+`;
