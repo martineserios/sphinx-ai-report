@@ -1,6 +1,8 @@
 import ReactApexChart from "react-apexcharts";
 import { ContainerDiv } from "../Container/ContainerDiv";
 import { styled } from "styled-components";
+import { topLeft } from "../../assets";
+import data from "../../data/data";
 const PolarContainer = styled.div`
   height: 230px;
   width: 230px;
@@ -9,18 +11,22 @@ const PolarContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 20px 0px;
 `;
-
-const TopLeftText = styled.span`
-  display: inline-block;
-  border-radius: 50px; /* Ajuste o valor do raio conforme necessário */
-  background-color: #f0f0f0; /* Cor de fundo do seu span */
-  padding: 5px 10px; /* Ajuste o preenchimento conforme necessário */
-
+const CircleStyled = styled.img`
+  position: absolute;
+  margin-top: -32px;
+  margin-left: 20px;
+  width: 340px;
 `;
 
 export const Resumen = () => {
-  const series = [40, 20, 30, 50];
+  const series = [
+    data.resumen.vision,
+    data.resumen.sacadicos,
+    data.resumen.headCompensation,
+    data.resumen.resistencia,
+  ];
   const options = {
     chart: {
       width: 300,
@@ -41,7 +47,7 @@ export const Resumen = () => {
     },
     stroke: {
       width: 2,
-      colors: ["#fff"], // Adiciona cor branca para a borda
+      colors: ["#fff"],
     },
     tooltip: {
       enabled: false,
@@ -77,16 +83,19 @@ export const Resumen = () => {
   };
 
   return (
-    <ContainerDiv id="chart">
-      <PolarContainer>
-        <ReactApexChart
-          options={options}
-          series={series}
-          type="polarArea"
-          width={300}
-        />
-      </PolarContainer>
-    </ContainerDiv>
+    <>
+      <ContainerDiv title="RESUMEN">
+        <PolarContainer>
+          <ReactApexChart
+            options={options}
+            series={series}
+            type="polarArea"
+            width={300}
+          />
+        </PolarContainer>
+        <CircleStyled src={topLeft} />
+      </ContainerDiv>
+    </>
   );
 };
 

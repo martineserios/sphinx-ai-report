@@ -21,17 +21,17 @@
     "piernaApoyo": "D",
     "pirnaCood": "D"
   },
-  
+
   "resultado1": "90",
   "resultado2": "95",
 
-  "blinkingBlindness":{
+  "blinkingBlindness": {
     "value1": 4,
     "value2": 1
   },
 
   "decisionBajoPresion": "40",
-  
+
   "averageAcuraccy": {
     "blue1": 90,
     "pink1": 19,
@@ -89,6 +89,10 @@
 
   "eloDistribution": "9",
 
-
-  "arrayData": ["Item 1", "Item 2", "Item 3"]
+  "resumen": {
+    "resistencia": "50",
+    "vision": "40",
+    "sacadicos": "20",
+    "headCompensation": "30"
+  }
 }
