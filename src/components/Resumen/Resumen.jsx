@@ -11,13 +11,13 @@ const PolarContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 20px 0px;
+  margin: 30px 20px;
 `;
 const CircleStyled = styled.img`
   position: absolute;
-  margin-top: -32px;
+  margin-top: -34px;
   margin-left: 20px;
-  width: 340px;
+  width: 360px;
 `;
 
 export const Resumen = () => {

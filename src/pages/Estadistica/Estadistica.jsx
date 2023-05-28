@@ -2,12 +2,17 @@ import {
   EloDistribution,
   Header,
   PageSection,
+  Recomendaciones,
   Resumen,
 } from "../../components";
 import data from "../../data/data";
-import { EstadisticaStyled } from "./Estadistica.styles";
+import useFormattedDate from "../../hooks/useFormattedDate";
+import { HomeFooter } from "../Home/Home.styles";
+import { EstadisticaStyled, HorizontalContainerEs } from "./Estadistica.styles";
 
 export const Estadistica = () => {
+  const formattedDate = useFormattedDate();
+
   return (
     <PageSection>
       <EstadisticaStyled>
@@ -19,7 +24,13 @@ export const Estadistica = () => {
           }
         />
         <EloDistribution positionCircle={data.eloDistribution - 1} />
-        <Resumen />
+        <HorizontalContainerEs>
+          <Resumen />
+          <Recomendaciones data={data.recomendaciones} />
+        </HorizontalContainerEs>
+        <HomeFooter>
+          <h3>FECHA DE EVALUACIÓN | {formattedDate}</h3>
+        </HomeFooter>
       </EstadisticaStyled>
     </PageSection>
   );

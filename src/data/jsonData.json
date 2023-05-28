@@ -94,5 +94,17 @@
     "vision": "40",
     "sacadicos": "20",
     "headCompensation": "30"
+  },
+
+  "recomendaciones": {
+    "visualTecnica": 50,
+    "visualTactica": 65,
+    "letraSimbolo": 90,
+    "zonaYTiempo": 40,
+    "yaw": 10,
+    "pitch": 45,
+    "roll": 70,
+    "izqADer": 66,
+    "derAIzq": 33
   }
 }

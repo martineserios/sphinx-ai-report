@@ -13,6 +13,7 @@ import { Header } from "./Header/Header";
 import { NivelesDePrecision } from "./NivelesDePrecision/NivelesdePrecision";
 import { PageSection } from "./PageSection/PageSection";
 import { RankingAnimal } from "./RankingAnimal/RankingAnimal";
+import { Recomendaciones } from "./Recomendaciones/Recomendaciones";
 import { Resumen } from "./Resumen/Resumen";
 import { SingleProgressBar } from "./SingleProgressBar/SingleProgressBar";
 import { SoftwareBBM } from "./SoftwareBBM/SoftwareBBM";
@@ -35,6 +36,7 @@ export {
   NivelesDePrecision,
   PageSection,
   RankingAnimal,
+  Recomendaciones,
   Resumen,
   SingleProgressBar,
   SoftwareBBM,
