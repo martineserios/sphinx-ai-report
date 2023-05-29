@@ -60,3 +60,10 @@ export const AVTitle = styled.span`
   border-bottom: 2px solid #a87b2c;
   padding: 0px 10px;
 `;
+
+export const SvgImg = styled.img`
+  position: absolute;
+  height: 18px;
+  margin-top: ${({ imgmargintop }) => imgmargintop};
+  margin-left: ${({ imgmarginleft }) => imgmarginleft};
+`;

@@ -4,7 +4,9 @@
   "lastName": "Di Paola",
   "profile": "assets/perfil.jpg",
   "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque non consequat velit. Maecenas eros risus, ultricies quis lorem eu, venenatis varius velit. Phasellus in nisl eget nunc vulputate ornare in quis tellus.",
+  
   "ranking": 164,
+
   "visionPerformance": {
     "periferica": 45,
     "resistencia": 90,
@@ -87,7 +89,7 @@
 
   "blinkDuration": "A3",
 
-  "eloDistribution": "9",
+  "eloDistribution": 9,
 
   "resumen": {
     "resistencia": "50",

@@ -7,7 +7,9 @@ import {
   AVLabelText,
   AVTitle,
   InclinedDiv,
+  SvgImg,
 } from "./AverageAcuraccy.styles";
+import { asterisk, clock, target } from "../../assets";
 
 const dataA = [
   { name: "90%", value: data.averageAcuraccy.blue1 },
@@ -25,7 +27,7 @@ const dataC = [
   { name: "AM", value: 30 },
   { name: "Missing Value", value: 70 },
 ];
-const COLORSC = ["#C5E268", "transparent"];
+const COLORSC = ["#DFE71A", "transparent"];
 
 const dataD = [
   { name: "90%", value: data.averageAcuraccy.blue2 },
@@ -44,8 +46,8 @@ const dataF = [
 
 export const AverageAcuraccy = () => {
   return (
-    <ContainerDiv title="OVERALL AVERAGE ACCURACY">
-      <PieChart width={460} height={250}>
+    <ContainerDiv title="OVERALL AVERAGE ACCURACY" rounded >
+      <PieChart width={466} height={250}>
         <Pie
           data={dataA}
           cx={100}
@@ -111,7 +113,7 @@ export const AverageAcuraccy = () => {
         </Pie>
         <Pie
           data={dataD}
-          cx={350}
+          cx={346}
           cy={130}
           startAngle={90}
           endAngle={-280}
@@ -132,7 +134,7 @@ export const AverageAcuraccy = () => {
         </Pie>
         <Pie
           data={dataE}
-          cx={350}
+          cx={346}
           cy={130}
           startAngle={90}
           endAngle={-280}
@@ -153,7 +155,7 @@ export const AverageAcuraccy = () => {
         </Pie>
         <Pie
           data={dataF}
-          cx={350}
+          cx={346}
           cy={130}
           startAngle={150}
           endAngle={-280}
@@ -183,6 +185,7 @@ export const AverageAcuraccy = () => {
         borderleft="true"
         borderbottom="true"
       />
+      <SvgImg src={target} imgmargintop="192px" imgmarginleft="-38px" />
       <InclinedDiv
         margintop="70px"
         marginleft="-120px"
@@ -194,6 +197,7 @@ export const AverageAcuraccy = () => {
         bordertop="true"
         borderleft="true"
       />
+      <SvgImg src={clock} imgmargintop="62px" imgmarginleft="-30px" />
       <InclinedDiv
         margintop="75px"
         marginleft="-350px"
@@ -205,9 +209,10 @@ export const AverageAcuraccy = () => {
         borderright="true"
         bordertop="true"
       />
+      <SvgImg src={asterisk} imgmargintop="66px" imgmarginleft="-440px" />
       <InclinedDiv
         margintop="75px"
-        marginleft="150px"
+        marginleft="146px"
         skewx="skewx(20deg)"
         content="AM"
         skewxb="skewx(-20deg)"
@@ -216,9 +221,11 @@ export const AverageAcuraccy = () => {
         borderright="true"
         bordertop="true"
       />
+      <SvgImg src={asterisk} imgmargintop="66px" imgmarginleft="60px" />
+
       <InclinedDiv
         margintop="70px"
-        marginleft="380px"
+        marginleft="370px"
         content={data.averageAcuraccy.pink2 + "%"}
         skewx="skewx(-20deg)"
         skewxb="skewx(20deg)"
@@ -227,6 +234,8 @@ export const AverageAcuraccy = () => {
         bordertop="true"
         borderleft="true"
       />
+      <SvgImg src={clock} imgmargintop="62px" imgmarginleft="460px" />
+
       <InclinedDiv
         margintop="180px"
         marginleft="130px"
@@ -237,9 +246,12 @@ export const AverageAcuraccy = () => {
         borderright="true"
         borderbottom="true"
       />
+      <SvgImg src={target} imgmargintop="192px" imgmarginleft="50px" />
+
+
       <AVLabelContainer labelmargintop="230px" labelmarginleft="-240px">
         <AVLabelText>
-          <AVDotLabel color="#C5E268"></AVDotLabel>
+          <AVDotLabel color="#DFE71A"></AVDotLabel>
           AM
         </AVLabelText>
         <AVLabelText>
@@ -253,7 +265,7 @@ export const AverageAcuraccy = () => {
       </AVLabelContainer>
       <AVLabelContainer labelmargintop="230px" labelmarginleft="265px">
         <AVLabelText>
-          <AVDotLabel color="#C5E268"></AVDotLabel>
+          <AVDotLabel color="#DFE71A"></AVDotLabel>
           AM
         </AVLabelText>
         <AVLabelText>

@@ -21,9 +21,7 @@ export const AsimetriaFuncional = (props) => {
               <InputRadio
                 type="radio"
                 id="ojoTecnicoI"
-                defaultChecked={
-                  props.radioValue.ojoTecnico === "I" ? true : false
-                }
+                checked={props.radioValue.ojoTecnico === "I" ? true : false}
                 name="ojoTecnico"
                 value="I"
                 readOnly
