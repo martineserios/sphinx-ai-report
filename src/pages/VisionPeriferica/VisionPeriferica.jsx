@@ -37,9 +37,14 @@ export const VisionPeriferica = () => {
               contwidth="100px"
               titleDirection="right"
             >
-              <SingleProgressBar subtitle="NIVEL 1" progress={data.resultado1} />
+              <SingleProgressBar
+                subtitle="NIVEL 1"
+                progress={data.visionPeriferica.resultado1}
+              />
             </ContainerDiv>
-            <BlinkingBlindness chartValue={data.blinkingBlindness.value1} />
+            <BlinkingBlindness
+              chartValue={data.visionPeriferica.blinkingBlindness}
+            />
           </VerticalHolder>
         </DuoContainerVP>
         <TextBox
@@ -49,22 +54,21 @@ export const VisionPeriferica = () => {
           <TextBoxImg src={lettersChart} />
         </TextBox>
         <HeadCompensation
-          progress={data.firstHeadCompensation.percentage}
-          progressNivel={data.firstHeadCompensation.nivel}
-          stackValue1={data.firstHeadCompensation.stackValue1}
-          stackColor1={data.firstHeadCompensation.stackColor1}
-          stackValue2={data.firstHeadCompensation.stackValue2}
-          stackColor2={data.firstHeadCompensation.stackColor2}
-          stackValue3={data.firstHeadCompensation.stackValue3}
-          stackColor3={data.firstHeadCompensation.stackColor3}
-          stackValue4={data.firstHeadCompensation.stackValue4}
-          stackColor4={data.firstHeadCompensation.stackColor4}
-          stackValue5={data.firstHeadCompensation.stackValue5}
-          stackColor5={data.firstHeadCompensation.stackColor5}
-          stackValue6={data.firstHeadCompensation.stackValue6}
-          stackColor6={data.firstHeadCompensation.stackColor6}
+          progress={data.visionPeriferica.headCompensation.percentage}
+          progressNivel={data.visionPeriferica.headCompensation.nivel}
+          stackValue1={data.visionPeriferica.headCompensation.stackValue1}
+          stackColor1={data.visionPeriferica.headCompensation.stackColor1}
+          stackValue2={data.visionPeriferica.headCompensation.stackValue2}
+          stackColor2={data.visionPeriferica.headCompensation.stackColor2}
+          stackValue3={data.visionPeriferica.headCompensation.stackValue3}
+          stackColor3={data.visionPeriferica.headCompensation.stackColor3}
+          stackValue4={data.visionPeriferica.headCompensation.stackValue4}
+          stackColor4={data.visionPeriferica.headCompensation.stackColor4}
+          stackValue5={data.visionPeriferica.headCompensation.stackValue5}
+          stackColor5={data.visionPeriferica.headCompensation.stackColor5}
+          stackValue6={data.visionPeriferica.headCompensation.stackValue6}
+          stackColor6={data.visionPeriferica.headCompensation.stackColor6}
         />
-        
       </VPStyled>
     </PageSection>
   );

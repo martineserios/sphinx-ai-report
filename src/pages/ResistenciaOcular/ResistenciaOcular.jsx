@@ -28,38 +28,40 @@ export const ResistenciaOcular = () => {
           }
         />
         <HorizontalContainerRO>
-          <BlinkDuration radioValue={data.blinkDuration} />
+          <BlinkDuration radioValue={data.resistenciaOcular.blinkDuration} />
           <EARBlinks />
           <VerticalContainerRO>
             <ContainerDiv title="RESULTADO">
               <SingleProgressBar
                 subtitle={`NIVEL 1`}
-                progress={data.resultado2}
+                progress={data.resistenciaOcular.resultado}
               />
             </ContainerDiv>
-            <BlinkingBlindness chartValue={data.blinkingBlindness.value2} />
+            <BlinkingBlindness
+              chartValue={data.resistenciaOcular.blinkingBlindness}
+            />
           </VerticalContainerRO>
         </HorizontalContainerRO>
         <TextBox
           title={"INTERPRETACION DE RESULTADO"}
           textL={`El software BBM muestra que ${data.firstName} ${data.lastName} tuvo dificultad en los dos sectores del lado izquierdo (AI, A3). Esto se debe al acortamiento o falta de fuerza-resistencia de los músculos oculares y una pequeña compensasión con la cabeza. Se recomienda ejercitar los músculos correspondientes a los sectores de mayor`}
-          textR={`dficultad para mejorar dicha deficiencia ya que genera un desbalance general el cuerpo. También es aconsejable pestañar una mayor cantidad de veces considerando que el ojo necesita de la lágrima para poder generar una correcta imagen. (${data.blinkingBlindness.value2}/10)`}
+          textR={`dficultad para mejorar dicha deficiencia ya que genera un desbalance general el cuerpo. También es aconsejable pestañar una mayor cantidad de veces considerando que el ojo necesita de la lágrima para poder generar una correcta imagen. (${data.resistenciaOcular.blinkingBlindness}/10)`}
         />
         <HeadCompensation
-          progress={data.secondHeadCompensation.percentage}
-          progressNivel={data.secondHeadCompensation.nivel}
-          stackValue1={data.secondHeadCompensation.stackValue1}
-          stackColor1={data.secondHeadCompensation.stackColor1}
-          stackValue2={data.secondHeadCompensation.stackValue2}
-          stackColor2={data.secondHeadCompensation.stackColor2}
-          stackValue3={data.secondHeadCompensation.stackValue3}
-          stackColor3={data.secondHeadCompensation.stackColor3}
-          stackValue4={data.secondHeadCompensation.stackValue4}
-          stackColor4={data.secondHeadCompensation.stackColor4}
-          stackValue5={data.secondHeadCompensation.stackValue5}
-          stackColor5={data.secondHeadCompensation.stackColor5}
-          stackValue6={data.secondHeadCompensation.stackValue6}
-          stackColor6={data.secondHeadCompensation.stackColor6}
+          progress={data.resistenciaOcular.headCompensation.percentage}
+          progressNivel={data.resistenciaOcular.headCompensation.nivel}
+          stackValue1={data.resistenciaOcular.headCompensation.stackValue1}
+          stackColor1={data.resistenciaOcular.headCompensation.stackColor1}
+          stackValue2={data.resistenciaOcular.headCompensation.stackValue2}
+          stackColor2={data.resistenciaOcular.headCompensation.stackColor2}
+          stackValue3={data.resistenciaOcular.headCompensation.stackValue3}
+          stackColor3={data.resistenciaOcular.headCompensation.stackColor3}
+          stackValue4={data.resistenciaOcular.headCompensation.stackValue4}
+          stackColor4={data.resistenciaOcular.headCompensation.stackColor4}
+          stackValue5={data.resistenciaOcular.headCompensation.stackValue5}
+          stackColor5={data.resistenciaOcular.headCompensation.stackColor5}
+          stackValue6={data.resistenciaOcular.headCompensation.stackValue6}
+          stackColor6={data.resistenciaOcular.headCompensation.stackColor6}
         />
       </ROStyled>
     </PageSection>

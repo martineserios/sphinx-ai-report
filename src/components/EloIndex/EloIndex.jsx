@@ -25,7 +25,7 @@ const RankContainer = styled.div`
 export const EloIndex = (props) => {
   return (
     <ContainerDiv title="SPHINX ELO INDEX">
-      <RankingAnimal />
+      <RankingAnimal ranking={props.ranking} starmarginleft={30} />
       <RankContainer>
         <h3>
           {props.ranking}

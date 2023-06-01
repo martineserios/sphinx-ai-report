@@ -2,111 +2,116 @@
   "id": "00012P",
   "firstName": "Martin",
   "lastName": "Di Paola",
-  "profile": "assets/perfil.jpg",
   "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque non consequat velit. Maecenas eros risus, ultricies quis lorem eu, venenatis varius velit. Phasellus in nisl eget nunc vulputate ornare in quis tellus.",
-  
-  "ranking": 164,
 
-  "visionPerformance": {
-    "periferica": 45,
-    "resistencia": 90,
-    "compensation": 38,
-    "sacadios": 11
+  "home": {
+    "ranking": 165,
+
+    "visionPerformance": {
+      "periferica": 45,
+      "resistencia": 90,
+      "compensation": 38,
+      "sacadios": 11
+    },
+
+    "asimetriaFuncional": {
+      "ojoTecnico": "I",
+      "ojoTactico": "D",
+      "hombro": "I",
+      "cadera": "D",
+      "piernaDinamica": "I",
+      "piernaApoyo": "D",
+      "pirnaCood": "D"
+    },
+
+    "decisionBajoPresion": "40"
   },
 
-  "asimetriaFuncional": {
-    "ojoTecnico": "I",
-    "ojoTactico": "D",
-    "hombro": "I",
-    "cadera": "D",
-    "piernaDinamica": "I",
-    "piernaApoyo": "D",
-    "pirnaCood": "D"
+  "visionPeriferica": {
+    "averageAcuraccy": {
+      "blue1": 90,
+      "pink1": 19,
+      "blue2": 90,
+      "pink2": 23
+    },
+
+    "resultado1": "90",
+
+    "blinkingBlindness": 4,
+
+    "headCompensation": {
+      "nivel": "AMATEUR",
+      "percentage": "31",
+
+      "stackValue1": "60",
+      "stackColor1": "PRO",
+
+      "stackValue2": "82",
+      "stackColor2": "AR",
+
+      "stackValue3": "75",
+      "stackColor3": "AM",
+
+      "stackValue4": "90",
+      "stackColor4": "PRO",
+
+      "stackValue5": "30",
+      "stackColor5": "BEG",
+
+      "stackValue6": "20",
+      "stackColor6": "PRO"
+    }
   },
 
-  "resultado1": "90",
-  "resultado2": "95",
+  "resistenciaOcular": {
+    "blinkDuration": "A3",
+    "resultado": "95",
+    "blinkingBlindness": 1,
 
-  "blinkingBlindness": {
-    "value1": 4,
-    "value2": 1
+    "headCompensation": {
+      "nivel": "AMATEUR",
+      "percentage": "32",
+
+      "stackValue1": "40",
+      "stackColor1": "PRO",
+
+      "stackValue2": "22",
+      "stackColor2": "BEG",
+
+      "stackValue3": "65",
+      "stackColor3": "AM",
+
+      "stackValue4": "10",
+      "stackColor4": "PRO",
+
+      "stackValue5": "80",
+      "stackColor5": "AM",
+
+      "stackValue6": "20",
+      "stackColor6": "BEG"
+    }
   },
 
-  "decisionBajoPresion": "40",
+  "estadisticaDelJugador": {
+    "eloDistribution": 9,
 
-  "averageAcuraccy": {
-    "blue1": 90,
-    "pink1": 19,
-    "blue2": 90,
-    "pink2": 23
-  },
+    "recomendaciones": {
+      "visualTecnica": 50,
+      "visualTactica": 70,
+      "letraSimbolo": 90,
+      "zonaYTiempo": 40,
+      "yaw": 10,
+      "pitch": 45,
+      "roll": 70,
+      "izqADer": 66,
+      "derAIzq": 33
+    },
 
-  "firstHeadCompensation": {
-    "nivel": "AMATEUR",
-    "percentage": "31",
-
-    "stackValue1": "60",
-    "stackColor1": "PRO",
-
-    "stackValue2": "82",
-    "stackColor2": "AR",
-
-    "stackValue3": "75",
-    "stackColor3": "AM",
-
-    "stackValue4": "90",
-    "stackColor4": "PRO",
-
-    "stackValue5": "30",
-    "stackColor5": "BEG",
-
-    "stackValue6": "20",
-    "stackColor6": "PRO"
-  },
-
-  "secondHeadCompensation": {
-    "nivel": "AMATEUR",
-    "percentage": "32",
-
-    "stackValue1": "50",
-    "stackColor1": "PRO",
-
-    "stackValue2": "22",
-    "stackColor2": "BEG",
-
-    "stackValue3": "65",
-    "stackColor3": "AM",
-
-    "stackValue4": "10",
-    "stackColor4": "PRO",
-
-    "stackValue5": "80",
-    "stackColor5": "AM",
-
-    "stackValue6": "20",
-    "stackColor6": "BEG"
-  },
-
-  "blinkDuration": "A3",
-
-  "eloDistribution": 9,
-
-  "resumen": {
-    "resistencia": "50",
-    "vision": "40",
-    "sacadicos": "20",
-    "headCompensation": "30"
-  },
-
-  "recomendaciones": {
-    "visualTecnica": 50,
-    "visualTactica": 65,
-    "letraSimbolo": 90,
-    "zonaYTiempo": 40,
-    "yaw": 10,
-    "pitch": 45,
-    "roll": 70,
-    "izqADer": 66,
-    "derAIzq": 33
+    "resumen": {
+      "resistencia": "50",
+      "vision": "40",
+      "sacadicos": "20",
+      "headCompensation": "30"
+    }
   }
 }

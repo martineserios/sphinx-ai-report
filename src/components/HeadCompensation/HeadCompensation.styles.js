@@ -39,6 +39,11 @@ export const LabelText = styled.span`
   align-items: center;
 `;
 
+export const HexagonImg = styled.img`
+  transform: rotate(${({ rotate }) => rotate || "-90deg"});
+  width: 34px;
+`;
+
 export const Hexagon = styled.div`
   width: 50px;
   height: 60px;
@@ -57,6 +62,7 @@ export const HexagonContent = styled.div`
   background-color: #504c67;
   display: flex;
   justify-content: center;
+  align-items: center;
   flex-direction: column;
   clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
 `;

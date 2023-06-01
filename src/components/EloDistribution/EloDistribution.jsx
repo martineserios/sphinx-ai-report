@@ -6,11 +6,13 @@ import {
   CircleOuter,
   DotsContainer,
   RankingAnimalContainer,
+  SphinxContainer,
   SubtitleContainer,
   SubtitleDots,
 } from "./EloDistribution.styles";
 import { useEffect, useState } from "react";
 import useCirclePosition from "../../hooks/useCirclePosition";
+import { sphinx } from "../../assets";
 
 const data = [
   {
@@ -123,10 +125,10 @@ const CustomBar = ({ x, y, width, height, color }) => {
   return <rect x={x} y={y} width={width} height={height} fill={color} />;
 };
 
-const width = 650
-const height = 300
+const width = 650;
+const height = 300;
 
-export const EloDistribution = ({ positionCircle }) => {
+export const EloDistribution = ({ positionCircle, ranking }) => {
   const [circlePosition, setCirclePosition] = useState(0);
   useEffect(() => {
     setCirclePosition(useCirclePosition(positionCircle));
@@ -134,7 +136,7 @@ export const EloDistribution = ({ positionCircle }) => {
 
   return (
     <ContainerDiv title="ELO DISTRIBUTION" textBox="true">
-      <ResponsiveContainer width="90%" height={height} >
+      <ResponsiveContainer width="90%" height={height}>
         <ComposedChart
           data={data}
           margin={{ top: 100, right: 50, bottom: 46, left: 0 }}
@@ -159,7 +161,7 @@ export const EloDistribution = ({ positionCircle }) => {
       </CircleOuter>
       <RankingAnimalContainer position={"100px 0px 0px -580px"}>
         <RankingAnimal
-          bgColor="#FFC563"
+          ranking={50}
           width={55}
           innerWidth={50}
           height={65}
@@ -172,20 +174,21 @@ export const EloDistribution = ({ positionCircle }) => {
       </RankingAnimalContainer>
       <RankingAnimalContainer position={"59px 0px 0px -400px"}>
         <RankingAnimal
-          bgColor="#FFC563"
+          ranking={80}
           width={55}
           innerWidth={50}
           height={65}
           innerHeight={59}
           animalHeight={35}
+          animalmarginbottom={-16}
           starHeight={16}
-          starBottom={-6}
+          starBottom={0}
         />
         <span>AM</span>
       </RankingAnimalContainer>
       <RankingAnimalContainer position={"20px 0px 0px -220px"}>
         <RankingAnimal
-          bgColor="#B86482"
+          ranking={120}
           width={55}
           innerWidth={50}
           height={65}
@@ -198,7 +201,8 @@ export const EloDistribution = ({ positionCircle }) => {
       </RankingAnimalContainer>
       <RankingAnimalContainer position={"0px 0px 0px -50px"}>
         <RankingAnimal
-          bgColor="#FE7396"
+          ranking={170}
+          animalmarginbottom={-8}
           width={55}
           innerWidth={50}
           height={65}
@@ -211,7 +215,7 @@ export const EloDistribution = ({ positionCircle }) => {
       </RankingAnimalContainer>
       <RankingAnimalContainer position={"20px 0px 0px 125px"}>
         <RankingAnimal
-          bgColor="#9B3FFF"
+          ranking={230}
           width={55}
           innerWidth={50}
           height={65}
@@ -224,7 +228,7 @@ export const EloDistribution = ({ positionCircle }) => {
       </RankingAnimalContainer>
       <RankingAnimalContainer position={"50px 0px 0px 290px"}>
         <RankingAnimal
-          bgColor="#01FEFC"
+          ranking={260}
           width={55}
           innerWidth={50}
           height={65}
@@ -285,6 +289,10 @@ export const EloDistribution = ({ positionCircle }) => {
           <span>+500</span>
         </DotsContainer>
       </SubtitleContainer>
+      <SphinxContainer>
+        <img src={sphinx} />
+        <h3>TOP 1%</h3>
+      </SphinxContainer>
     </ContainerDiv>
   );
 };

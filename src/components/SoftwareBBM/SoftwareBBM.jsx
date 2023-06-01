@@ -1,5 +1,5 @@
 import { styled } from "styled-components";
-import { profile, whiteUp } from "../../assets";
+import { profilebbm, whiteUp } from "../../assets";
 
 const SoftwareBBMContainer = styled.div`
   display: flex;
@@ -49,7 +49,7 @@ export const SoftwareBBM = () => {
         <img src={whiteUp} />
         <OutsideContainer>
           <InsideContainer>
-            <img src={profile} />
+            <img src={profilebbm} />
           </InsideContainer>
         </OutsideContainer>
       </SoftwareBBMContainer>

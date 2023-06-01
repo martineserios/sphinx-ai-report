@@ -23,10 +23,10 @@ export const Estadistica = () => {
             "En la siguiente tabla se muestra el resultado de las habilidades visuales del deportista luego de realizar las diferentes pruebas. Así como también los pasos a seguir para alcanzar el próximo nivel."
           }
         />
-        <EloDistribution positionCircle={data.eloDistribution - 1} />
+        <EloDistribution positionCircle={data.estadisticaDelJugador.eloDistribution - 1} />
         <HorizontalContainerEs>
           <Resumen />
-          <Recomendaciones data={data.recomendaciones} />
+          <Recomendaciones data={data.estadisticaDelJugador.recomendaciones} />
         </HorizontalContainerEs>
         <HomeFooter>
           <h3>FECHA DE EVALUACIÓN | {formattedDate}</h3>

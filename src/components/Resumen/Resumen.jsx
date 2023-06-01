@@ -22,10 +22,10 @@ const CircleStyled = styled.img`
 
 export const Resumen = () => {
   const series = [
-    data.resumen.vision,
-    data.resumen.sacadicos,
-    data.resumen.headCompensation,
-    data.resumen.resistencia,
+    data.estadisticaDelJugador.resumen.vision,
+    data.estadisticaDelJugador.resumen.sacadicos,
+    data.estadisticaDelJugador.resumen.headCompensation,
+    data.estadisticaDelJugador.resumen.resistencia,
   ];
   const options = {
     chart: {

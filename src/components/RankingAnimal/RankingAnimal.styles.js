@@ -23,11 +23,17 @@ export const HexagonInner = styled.div`
 `;
 
 export const StarImg = styled.img`
-  height: ${({ starheight }) => starheight || "36"}px;
-  margin-bottom: ${({ starbottom }) => starbottom || "-20"}px;
-
+  height: ${({ starheight }) => starheight || "30"}px;
+  margin-bottom: ${({ starbottom }) => starbottom || "-12"}px;
 `;
 
 export const AnimalImg = styled.img`
   height: ${({ animalheight }) => animalheight || "80"}px;
+  margin-bottom: ${({ animalmarginbottom }) => animalmarginbottom || "0"}px;
+`;
+
+export const StarContainer = styled.div`
+  margin-left: ${({ starmarginleft }) => starmarginleft || "0"}px;
+
+  margin-bottom: 6px;
 `;

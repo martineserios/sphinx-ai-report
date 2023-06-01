@@ -7,6 +7,7 @@ import {
   Hexagon,
   HexagonContainer,
   HexagonContent,
+  HexagonImg,
   HorizontalContainer,
   LabelContainer,
   LabelText,
@@ -15,6 +16,7 @@ import {
   SubtitleContainer,
   VerticalContainer,
 } from "./HeadCompensation.styles";
+import { pitch, roll, yaw } from "../../assets";
 
 export const HeadCompensation = ({
   progressNivel,
@@ -58,13 +60,19 @@ export const HeadCompensation = ({
           <CompensationContainer>
             <HexagonContainer>
               <Hexagon hexcolor="#41A44C" rotate="45deg">
-                <HexagonContent></HexagonContent>
+                <HexagonContent>
+                  <HexagonImg rotate="-45deg" src={yaw} />
+                </HexagonContent>
               </Hexagon>
               <Hexagon hexcolor="#ff7494">
-                <HexagonContent></HexagonContent>
+                <HexagonContent>
+                  <HexagonImg src={pitch} />
+                </HexagonContent>
               </Hexagon>
               <Hexagon hexcolor="#9044f7" rotate="10deg">
-                <HexagonContent></HexagonContent>
+                <HexagonContent>
+                  <HexagonImg src={roll} rotate="-10deg" />
+                </HexagonContent>
               </Hexagon>
             </HexagonContainer>
             <SubtitleContainer>

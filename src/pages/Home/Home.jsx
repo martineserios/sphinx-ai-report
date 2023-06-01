@@ -22,12 +22,12 @@ export const Home = () => {
           lastName={data.lastName}
         />
         <DuoContainer>
-          <EloIndex ranking={data.ranking} />
-          <VisionPerformance progress={data.visionPerformance} />
+          <EloIndex ranking={data.home.ranking} />
+          <VisionPerformance progress={data.home.visionPerformance} />
         </DuoContainer>
         <DuoContainer>
-          <AsimetriaFuncional radioValue={data.asimetriaFuncional} />
-          <BajoPresion needleData={data.decisionBajoPresion} />
+          <AsimetriaFuncional radioValue={data.home.asimetriaFuncional} />
+          <BajoPresion needleData={data.home.decisionBajoPresion} />
         </DuoContainer>
         <DuoContainer>
           <TextBox

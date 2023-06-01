@@ -12,14 +12,20 @@ import {
 import { asterisk, clock, target } from "../../assets";
 
 const dataA = [
-  { name: "90%", value: data.averageAcuraccy.blue1 },
-  { name: "Missing Value", value: 100 - data.averageAcuraccy.blue1 },
+  { name: "90%", value: data.visionPeriferica.averageAcuraccy.blue1 },
+  {
+    name: "Missing Value",
+    value: 100 - data.visionPeriferica.averageAcuraccy.blue1,
+  },
 ];
 const COLORSA = ["#5BE1E3", "transparent"];
 
 const dataB = [
-  { name: "19%", value: data.averageAcuraccy.pink1 },
-  { name: "Missing Value", value: 100 - data.averageAcuraccy.pink1 },
+  { name: "19%", value: data.visionPeriferica.averageAcuraccy.pink1 },
+  {
+    name: "Missing Value",
+    value: 100 - data.visionPeriferica.averageAcuraccy.pink1,
+  },
 ];
 const COLORSB = ["#FD7691", "transparent"];
 
@@ -30,13 +36,19 @@ const dataC = [
 const COLORSC = ["#DFE71A", "transparent"];
 
 const dataD = [
-  { name: "90%", value: data.averageAcuraccy.blue2 },
-  { name: "Missing Value", value: 100 - data.averageAcuraccy.blue2 },
+  { name: "90%", value: data.visionPeriferica.averageAcuraccy.blue2 },
+  {
+    name: "Missing Value",
+    value: 100 - data.visionPeriferica.averageAcuraccy.blue2,
+  },
 ];
 
 const dataE = [
-  { name: "23%", value: data.averageAcuraccy.pink2 },
-  { name: "Missing Value", value: 100 - data.averageAcuraccy.pink2 },
+  { name: "23%", value: data.visionPeriferica.averageAcuraccy.pink2 },
+  {
+    name: "Missing Value",
+    value: 100 - data.visionPeriferica.averageAcuraccy.pink2,
+  },
 ];
 
 const dataF = [
@@ -46,7 +58,7 @@ const dataF = [
 
 export const AverageAcuraccy = () => {
   return (
-    <ContainerDiv title="OVERALL AVERAGE ACCURACY" rounded >
+    <ContainerDiv title="OVERALL AVERAGE ACCURACY" rounded>
       <PieChart width={466} height={250}>
         <Pie
           data={dataA}
@@ -180,7 +192,7 @@ export const AverageAcuraccy = () => {
         marginleft="-120px"
         skewx="skewx(20deg)"
         skewxb="skewx(-20deg)"
-        content={data.averageAcuraccy.blue1 + "%"}
+        content={data.visionPeriferica.averageAcuraccy.blue1 + "%"}
         diheight="20px"
         borderleft="true"
         borderbottom="true"
@@ -189,7 +201,7 @@ export const AverageAcuraccy = () => {
       <InclinedDiv
         margintop="70px"
         marginleft="-120px"
-        content={data.averageAcuraccy.pink1 + "%"}
+        content={data.visionPeriferica.averageAcuraccy.pink1 + "%"}
         skewx="skewx(-20deg)"
         skewxb="skewx(20deg)"
         marginbottomlabel="40px"
@@ -226,7 +238,7 @@ export const AverageAcuraccy = () => {
       <InclinedDiv
         margintop="70px"
         marginleft="370px"
-        content={data.averageAcuraccy.pink2 + "%"}
+        content={data.visionPeriferica.averageAcuraccy.pink2 + "%"}
         skewx="skewx(-20deg)"
         skewxb="skewx(20deg)"
         marginbottomlabel="40px"
@@ -241,13 +253,12 @@ export const AverageAcuraccy = () => {
         marginleft="130px"
         skewx="skewx(-20deg)"
         skewxb="skewx(20deg)"
-        content={data.averageAcuraccy.blue2 + "%"}
+        content={data.visionPeriferica.averageAcuraccy.blue2 + "%"}
         diheight="20px"
         borderright="true"
         borderbottom="true"
       />
       <SvgImg src={target} imgmargintop="192px" imgmarginleft="50px" />
-
 
       <AVLabelContainer labelmargintop="230px" labelmarginleft="-240px">
         <AVLabelText>

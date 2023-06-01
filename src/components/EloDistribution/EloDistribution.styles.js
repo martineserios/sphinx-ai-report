@@ -55,3 +55,12 @@ export const CircleInner = styled.div`
   background: #fff;
   border-radius: 50%;
 `;
+
+export const SphinxContainer = styled.div`
+  color: #fff;
+  position: absolute;
+  margin-top: 100px;
+  margin-left: 600px;
+  width: 120px;
+  text-align: center;
+`;
