@@ -43,7 +43,7 @@
       "nivel": "AMATEUR",
       "percentage": "31",
 
-      "stackValue1": "60",
+      "stackValue1": "90",
       "stackColor1": "PRO",
 
       "stackValue2": "82",
@@ -65,6 +65,12 @@
 
   "resistenciaOcular": {
     "blinkDuration": "A3",
+    "earBlinks": {
+      "first": 5,
+      "second": 5,
+      "third": 5,
+      "fourth": 5
+    },
     "resultado": "95",
     "blinkingBlindness": 1,
 
@@ -95,6 +101,13 @@
   "estadisticaDelJugador": {
     "eloDistribution": 9,
 
+    "resumen": {
+      "resistencia": "50",
+      "vision": "40",
+      "sacadicos": "20",
+      "headCompensation": "30"
+    },
+
     "recomendaciones": {
       "visualTecnica": 50,
       "visualTactica": 70,
@@ -105,13 +118,6 @@
       "roll": 70,
       "izqADer": 66,
       "derAIzq": 33
-    },
-
-    "resumen": {
-      "resistencia": "50",
-      "vision": "40",
-      "sacadicos": "20",
-      "headCompensation": "30"
     }
   }
 }

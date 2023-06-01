@@ -3,11 +3,29 @@ import { PieChart, Pie, Sector, Cell } from "recharts";
 import { ContainerDiv } from "../Container/ContainerDiv";
 import { styled } from "styled-components";
 
-const data = [
-  { name: "Group D", value: 5, color: "#F5C7EC" },
-  { name: "Group A", value: 5, color: "#EC3655" },
-  { name: "Group B", value: 5, color: "#FA6997" },
-  { name: "Group C", value: 5, color: "#F99AC8" },
+import data from "../../data/data";
+
+const dataA = [
+  {
+    name: "Group D",
+    value: data.resistenciaOcular.earBlinks.first,
+    color: "#F5C7EC",
+  },
+  {
+    name: "Group A",
+    value: data.resistenciaOcular.earBlinks.second,
+    color: "#EC3655",
+  },
+  {
+    name: "Group B",
+    value: data.resistenciaOcular.earBlinks.third,
+    color: "#FA6997",
+  },
+  {
+    name: "Group C",
+    value: data.resistenciaOcular.earBlinks.fourth,
+    color: "#F99AC8",
+  },
 ];
 
 export const LabelContainer = styled.div`
@@ -45,8 +63,6 @@ const renderActiveShape = (props) => {
     startAngle,
     endAngle,
     fill,
-    payload,
-    percent,
     value,
   } = props;
   const sin = Math.sin(-RADIAN * midAngle);
@@ -110,7 +126,7 @@ export const EARBlinks = () => {
         <Pie
           activeIndex={activeIndex}
           activeShape={renderActiveShape}
-          data={data}
+          data={dataA}
           cx={100}
           cy={80}
           startAngle={180}
@@ -120,7 +136,7 @@ export const EARBlinks = () => {
           dataKey="value"
           onMouseEnter={onPieEnter}
         >
-          {data.map((entry, index) => (
+          {dataA.map((entry, index) => (
             <Cell key={`cell-${index}`} fill={entry.color} stroke="none" />
           ))}
         </Pie>
