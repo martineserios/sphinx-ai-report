@@ -1,0 +1,14 @@
+version: "1.0"
+services:
+ sphinx:
+   image: node:alpine
+   container_name: sphinx
+   entrypoint: /bin/sh
+   ports:
+     - 8000:8000
+   working_dir: /srv/app
+   volumes:
+     - type: bind
+       source: ./
+       target: /srv/app
+   tty: true
